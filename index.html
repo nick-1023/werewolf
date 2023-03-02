@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不可能自己寫主持人用的網頁吧</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper" class="container-fluid">
+        <div id="role_area" class="row">
+            <!-- 狼人 -->
+            <div class="bad_area">
+                <h2 class="title bad">邪惡陣營</h2>
+                <div class="col-12">
+                    <div class="row role bad">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/wolf-were.jpeg" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>狼人</h3>
+                            <input type="button" value="-" class="qtyminus" field="wolf-were" />
+                            <input type="number" value="0" name="wolf-were" class="qty" readonly>
+                            <input type="button" value="+" class="qtyplus" field="wolf-were" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="row role bad">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/wolf-king.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>狼王</h3>
+                            <input type="button" value="-" class="qtyminus" field="wolf-king" />
+                            <input type="number" value="0" name="wolf-king" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="wolf-king" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="row role bad">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/wolf-hide.jpeg" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>隱狼</h3>
+                            <input type="button" value="-" class="qtyminus" field="wolf-hide" />
+                            <input type="number" value="0" name="wolf-hide" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="wolf-hide" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-12">
+                    <div class="row role bad">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/wolf-white.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>白狼王</h3>
+                            <input type="button" value="-" class="qtyminus" field="wolf-white" />
+                            <input type="number" value="0" name="wolf-white" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="wolf-white" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="row role bad">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/wolf-queen.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>狼美人</h3>
+                            <input type="button" value="-" class="qtyminus" field="wolf-queen" />
+                            <input type="number" value="0" name="wolf-queen" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="wolf-queen" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="row role bad">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/wolf-ghost.jpeg" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>惡靈騎士</h3>
+                            <input type="button" value="-" class="qtyminus" field="wolf-ghost" />
+                            <input type="number" value="0" name="wolf-ghost" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="wolf-ghost" />
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- 狼人 -->
+
+            <div class="good_area">
+                <h2 class="title god">好人陣營</h2>
+                <!-- 平民 -->
+                <div class="col-12">
+                    <div class="row role civilian">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/civilian.jpeg" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>平民</h3>
+                            <input type="button" value="-" class="qtyminus" field="civilian" />
+                            <input type="number" value="0" name="civilian" class="qty" readonly>
+                            <input type="button" value="+" class="qtyplus" field="civilian" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 平民 -->
+
+                <!-- 神 -->
+                <div class="col-12">
+                    <div class="row role god">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/god-prophet.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>預言家</h3>
+                            <input type="button" value="-" class="qtyminus" field="god-prophet" />
+                            <input type="number" value="0" name="god-prophet" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="god-prophet" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row role god">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/god-witch.jpeg" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>女巫</h3>
+                            <input type="button" value="-" class="qtyminus" field="god-witch" />
+                            <input type="number" value="0" name="god-witch" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="god-witch" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row role god">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/god-hunter.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>獵人</h3>
+                            <input type="button" value="-" class="qtyminus" field="god-hunter" />
+                            <input type="number" value="0" name="god-hunter" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="god-hunter" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row role god">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/god-knight.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>騎士</h3>
+                            <input type="button" value="-" class="qtyminus" field="god-knight" />
+                            <input type="number" value="0" name="god-knight" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="god-knight" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row role god">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/god-guard.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>守衛</h3>
+                            <input type="button" value="-" class="qtyminus" field="god-guard" />
+                            <input type="number" value="0" name="god-guard" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="god-guard" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row role god">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/god-fool.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>白痴</h3>
+                            <input type="button" value="-" class="qtyminus" field="god-fool" />
+                            <input type="number" value="0" name="god-fool" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="god-fool" />
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-12">
+                    <div class="row role god">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/god-eros.jpeg" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>丘比特</h3>
+                            <input type="button" value="-" class="qtyminus" field="god-eros" />
+                            <input type="number" value="0" name="god-eros" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="god-eros" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row role god">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/god-magic.jpeg" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>魔術師</h3>
+                            <input type="button" value="-" class="qtyminus" field="god-magic" />
+                            <input type="number" value="0" name="god-magic" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="god-magic" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row role god">
+                        <div class="col-7">
+                            <img class="img-fluid" width="150" src="/images/god-thief.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h3>盜賊</h3>
+                            <input type="button" value="-" class="qtyminus" field="god-thief" />
+                            <input type="number" value="0" name="god-thief" class="qty" max="1" readonly>
+                            <input type="button" value="+" class="qtyplus" field="god-thief" />
+                        </div>
+                    </div>
+                </div> -->
+                <!-- 神 -->
+            </div>
+        </div>
+
+        <div class="action_area">
+            <button type="button" id="start-button" class="btn btn-lg btn-success">開始</button>
+
+            <button type="button" id="wolf-button" class="btn btn-lg hidden btn-danger" data-bs-toggle="modal" data-bs-target="#wolf-modal">狼人</button>
+            <div class="alert alert-danger result-wolf-area hidden" role="alert">
+                <div class="result-wolf-were-area hidden">
+                    <label>狼人</label>
+                    <div class="result"></div>
+                </div>
+                <div class="result-wolf-king-area hidden">
+                    <label>狼王</label>
+                    <div class="result"></div>
+                </div>
+                <div class="result-wolf-hide-area hidden">
+                    <label>隱狼</label>
+                    <div class="result"></div>
+                </div>
+                <div class="result-wolf-white-area hidden">
+                    <label>白狼王</label>
+                    <div class="result"></div>
+                </div>
+                <div class="result-wolf-queen-area hidden">
+                    <label>狼美人</label>
+                    <div class="result"></div>
+                </div>
+                <div class="result-wolf-ghost-area hidden">
+                    <label>惡靈騎士</label>
+                    <div class="result"></div>
+                </div>
+                <div class="result-wolf-kill-area hidden">
+                    <label>狼人每晚刀口</label>
+                    <div class="result"></div>
+                </div>
+            </div>
+
+            <hr>
+
+            <button type="button" id="god-witch-button" class="btn btn-lg hidden btn-primary" data-bs-toggle="modal"
+                data-bs-target="#witch-modal">女巫</button>
+            <div class="alert alert-primary result-witch-area hidden" role="alert">
+                <div class="result-god-witch-area">
+                    <label>女巫</label>
+                    <div class="result"></div>
+                </div>
+                <div class="result-witch-antidote-area">
+                    <label>解藥</label>
+                    <div class="result"></div>
+                </div>
+                <div class="result-witch-poison-area">
+                    <label>毒藥</label>
+                    <div class="result"></div>
+                </div>
+            </div>
+
+            <button type="button" id="god-prophet-button" class="btn btn-lg hidden btn-primary" data-bs-toggle="modal"
+                data-bs-target="#prophet-modal">預言家</button>
+            <div class="alert alert-primary result-prophet-area hidden" role="alert">
+                <div class="result-god-prophet-area">
+                    <label>預言家</label>
+                    <div class="result"></div>
+                </div>
+                <div class="result-prophet-check-area">
+                    <label>查驗對象</label>
+                    <div class="result"></div>
+                </div>
+            </div>
+            <button type="button" id="god-guard-button" class="btn btn-lg hidden btn-primary" data-bs-toggle="modal"
+                data-bs-target="#guard-modal">守衛</button>
+                <div class="alert alert-primary result-guard-area hidden" role="alert">
+                    <div class="result-god-guard-area">
+                        <label>守衛</label>
+                        <div class="result"></div>
+                    </div>
+                    <div class="result-guard-guard-area">
+                        <label>守護對象</label>
+                        <div class="result"></div>
+                    </div>
+                </div>
+            <!-- <button type="button" id="god-eros-button" class="btn btn-lg hidden btn-primary">丘比特</button>
+            <button type="button" id="god-magic-button" class="btn btn-lg hidden btn-primary">魔術師</button> -->
+
+            <hr>
+
+            <button type="button" id="god-hunter-button" class="btn btn-lg hidden btn-warning" data-bs-toggle="modal"
+                data-bs-target="#hunter-modal">獵人</button>
+            <div class="alert alert-primary result-hunter-area hidden" role="alert">
+                <div class="result-god-hunter-area">
+                    <label>獵人</label>
+                    <div class="result"></div>
+                </div>
+            </div>
+
+            <button type="button" id="god-knight-button" class="btn btn-lg hidden btn-warning" data-bs-toggle="modal"
+                data-bs-target="#knight-modal">騎士</button>
+            <div class="alert alert-primary result-knight-area hidden" role="alert">
+                <div class="result-god-knight-area">
+                    <label>騎士</label>
+                    <div class="result"></div>
+                </div>
+            </div>
+
+            <button type="button" id="god-fool-button" class="btn btn-lg hidden btn-warning" data-bs-toggle="modal"
+                data-bs-target="#fool-modal">白痴</button>
+            <div class="alert alert-primary result-fool-area hidden" role="alert">
+                <div class="result-god-fool-area">
+                    <label>白痴</label>
+                    <div class="result"></div>
+                </div>
+            </div>
+            <!-- <button type="button" id="god-thief-button" class="btn btn-lg hidden btn-warning">盜賊</button> -->
+
+            <hr>
+
+            <button type="button" id="result-button" class="btn btn-lg hidden  btn-info">結果</button>
+            <div class="alert alert-success result-area hidden" role="alert">
+            </div>
+        </div>
+
+
+        <div class="modal_area">
+            <div id="wolf-modal-area">
+                <!-- 狼人 modal -->
+                <div class="modal fade" id="wolf-modal" tabindex="-1" aria-labelledby="wolfModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="wolfModalLabel">狼人</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="alert alert-danger" role="alert">
+                                    狼人現身請睜眼。
+                                </div>
+
+                                <div id="wolf-were" class="check-wolf-were-area hidden">
+                                    <label>狼人</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+                                <div id="wolf-king" class="check-wolf-king-area hidden">
+                                    <label>狼王</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+                                <div id="wolf-hide" class="check-wolf-hide-area hidden">
+                                    <label>隱狼</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+                                <div id="wolf-white" class="check-wolf-white-area hidden">
+                                    <label>白狼王</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+                                <div id="wolf-queen" class="check-wolf-queen-area hidden">
+                                    <label>狼美人</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+                                <div id="wolf-ghost" class="check-wolf-ghost-area hidden">
+                                    <label>惡靈騎士</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+
+                                <br><br>
+
+                                <div class="alert alert-danger" role="alert">
+                                    請選擇要殺害的對象。
+                                </div>
+
+                                <div id="wolf-kill" class="wolf-kill-area hidden"></div>
+
+                                <br><br>
+                                <div class="alert alert-danger" role="alert">
+                                    狼人請閉眼。
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 狼人 modal -->
+            </div>
+
+            <div id="god-modal-area">
+                <!-- 女巫 modal -->
+                <div class="modal fade" id="witch-modal" tabindex="-1" aria-labelledby="witchModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="witchModalLabel">女巫</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="alert alert-primary" role="alert">
+                                    女巫請睜眼
+                                </div>
+
+                                <div id="god-witch" class="check-god-witch-area">
+                                    <label>女巫</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+                                <br><br>
+
+                                <div class="alert alert-primary" role="alert">
+                                    他被殺死了，你要救他嗎?
+                                </div>
+                                <div id="witch-antidote" class="witch-antidote-area"></div>
+                                <br><br>
+
+                                <div class="alert alert-primary" role="alert">
+                                    你要使用毒藥嗎? 你要毒殺的對象是?
+                                </div>
+                                <div id="witch-poison" class="witch-poison-area"></div>
+
+                                <br><br>
+                                <div class="alert alert-primary" role="alert">
+                                    女巫請閉眼。
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 女巫 modal -->
+
+                <!-- 預言家 modal -->
+                <div class="modal fade" id="prophet-modal" tabindex="-1" aria-labelledby="prophetModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="prophetModalLabel">預言家</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="alert alert-primary" role="alert">
+                                    預言家請睜眼
+                                </div>
+
+                                <div id="god-prophet" class="check-god-prophet-area">
+                                    <label>預言家</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+                                <br><br>
+
+                                <div class="alert alert-primary" role="alert">
+                                    你要查驗的對象是?
+                                </div>
+                                <div id="prophet-check" class="prophet-check-area"></div>
+
+                                <br><br>
+                                <div class="alert alert-primary" role="alert">
+                                    預言家請閉眼。
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 預言家 modal -->
+
+                <!-- 守衛 modal -->
+                <div class="modal fade" id="guard-modal" tabindex="-1" aria-labelledby="guardModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="guardModalLabel">守衛</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="alert alert-primary" role="alert">
+                                    守衛請睜眼
+                                </div>
+
+                                <div id="god-guard" class="check-god-guard-area">
+                                    <label>守衛</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+                                <br><br>
+
+                                <div class="alert alert-primary" role="alert">
+                                    請選擇你要守護的對象?
+                                </div>
+                                <div id="guard-guard" class="guard-guard-area"></div>
+
+                                <br><br>
+                                <div class="alert alert-primary" role="alert">
+                                    守衛請閉眼。
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 守衛 modal -->
+
+                <!-- 獵人 modal -->
+                <div class="modal fade" id="hunter-modal" tabindex="-1" aria-labelledby="hunterModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="hunterModalLabel">獵人</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="alert alert-primary" role="alert">
+                                    獵人請睜眼
+                                </div>
+
+                                <div id="god-hunter" class="check-god-hunter-area">
+                                    <label>獵人</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+                                <br><br>
+
+                                <div class="alert alert-primary" role="alert">
+                                    獵人請閉眼。
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 獵人 modal -->
+
+                <!-- 騎士 modal -->
+                <div class="modal fade" id="knight-modal" tabindex="-1" aria-labelledby="knightModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="knightModalLabel">騎士</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="alert alert-primary" role="alert">
+                                    騎士請睜眼
+                                </div>
+
+                                <div id="god-knight" class="check-god-knight-area">
+                                    <label>騎士</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+                                <br><br>
+
+                                <div class="alert alert-primary" role="alert">
+                                    騎士請閉眼。
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 騎士 modal -->
+
+                <!-- 白痴 modal -->
+                <div class="modal fade" id="fool-modal" tabindex="-1" aria-labelledby="foolModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="foolModalLabel">白痴</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="alert alert-primary" role="alert">
+                                    白痴請睜眼
+                                </div>
+
+                                <div id="god-fool" class="check-god-fool-area">
+                                    <label>白痴</label>
+                                    <div class="choose_number_area"></div>
+                                </div>
+                                <br><br>
+
+                                <div class="alert alert-primary" role="alert">
+                                    白痴請閉眼。
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 白痴 modal -->
+            </div>
+
+
+            <!-- 投票 modal -->
+            <div class="modal fade" id="vote-modal" tabindex="-1" aria-labelledby="voteModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="voteModalLabel">投票</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-success" role="alert">
+                                請所有玩家進行投票
+                            </div>
+
+                            <div id="vote" class="check-vote-area">
+                                <label>投票結果</label>
+                                <div class="vote_number_area"></div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 投票 modal -->
+        </div>
+
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-3">
+                狼人:
+                <label id="count_werewolf">0</label>
+            </div>
+            <div class="col-3">
+                神職:
+                <label id="count_god">0</label>
+            </div>
+            <div class="col-3">
+                平民:
+                <label id="count_civilian">0</label>
+            </div>
+            <div class="col-3 total_people">
+                總共:
+                <label id="total_people">0</label>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="/js/functions.js"></script>
+    <script src="/js/active.js"></script>
+</body>
+</html>

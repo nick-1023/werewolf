@@ -1,0 +1,92 @@
+body {
+    background: url("../images/background.jpg");
+}
+
+#wrapper {
+    width: 500px;
+}
+
+@media only screen and (max-width: 500px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+
+.qty {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 0;
+    background: #aaa;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+input.qtyplus {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #89e8a0;
+    background: #3fa356;
+    border-radius: 30%;
+}
+
+input.qtyminus {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    background: #dc3545;
+    border-radius: 30%;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 20px;
+    margin: 10px 0px;
+    background: url("../images/role_background.png") center no-repeat;
+}
+
+.title {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.bad {
+    border-color: #ff5757;
+    color: #b52d2d;
+}
+
+.god {
+    border-color: #5093ff;
+    color: #2056ae;
+}
+
+.civilian {
+    border-color: #fff872;
+    color: #e2da34;
+}
+
+.action_area {
+    margin: 50px 10px 80px 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    padding: 5px;
+    margin: 2px;
+    position: fixed;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.total_people {
+    color: #ff5757;
+}
